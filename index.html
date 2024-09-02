@@ -3,27 +3,35 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tribute to Lionel Messi</title>
+    <title>Calculator</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <div class="container">
-        <h1>Tribute to Lionel Messi</h1>
-        <img src="image/lionel-messi-argentinien-2022-1698689902-120754.jpg" alt="Lionel Messi">
-        <h2>The Magician of Football</h2>
-        <p>Lionel Messi, born on June 24, 1987, is an Argentine professional footballer who is widely regarded as one of the greatest players of all time. He has won the Ballon d'Or eight times, more than any other player in history. Messi's incredible dribbling skills, vision, and goal-scoring abilities have earned him the nickname "La Pulga" (The Flea).</p>
-        <p>Over his career, Messi has broken countless records and won numerous titles with both FC Barcelona and the Argentina national team. His dedication, humility, and passion for the game have inspired millions around the world.</p>
-        <h3>Key Achievements Of Lionel Messi:</h3>
-        <ul>
-            <li>FIFA World Cup Champion</li>
-            <li>Copa América Champion</li>
-            <li>8x Ballon d'Or Winner</li>
-            <li>4x UEFA Champions League Winner</li>
-            <li>10x La Liga Winner</li>
-            
-        </ul>
-        <p>Messi's journey from a small boy in Rosario, Argentina, to the pinnacle of world football is a testament to his hard work, perseverance, and unmatched talent. He continues to inspire future generations with his performances on the field.</p>
-        <p>This tribute page is a small gesture to honor the legendary career of Lionel Messi.</p>
+    <div class="calculator">
+        <div class="display" id="display"></div>
+        <div class="buttons">
+            <button class="btn operator" onclick="clearDisplay()">C</button>
+            <button class="btn operator" onclick="backspace()">DEL</button>
+            <button class="btn operator" onclick="appendCharacter('%')">%</button>
+            <button class="btn operator" onclick="appendCharacter('/')">/</button>
+            <button class="btn" onclick="appendCharacter('7')">7</button>
+            <button class="btn" onclick="appendCharacter('8')">8</button>
+            <button class="btn" onclick="appendCharacter('9')">9</button>
+            <button class="btn operator" onclick="appendCharacter('*')">*</button>
+            <button class="btn" onclick="appendCharacter('4')">4</button>
+            <button class="btn" onclick="appendCharacter('5')">5</button>
+            <button class="btn" onclick="appendCharacter('6')">6</button>
+            <button class="btn operator" onclick="appendCharacter('-')">-</button>
+            <button class="btn" onclick="appendCharacter('1')">1</button>
+            <button class="btn" onclick="appendCharacter('2')">2</button>
+            <button class="btn" onclick="appendCharacter('3')">3</button>
+            <button class="btn operator" onclick="appendCharacter('+')">+</button>
+            <button class="btn" onclick="appendCharacter('00')">00</button>
+            <button class="btn" onclick="appendCharacter('0')">0</button>
+            <button class="btn" onclick="appendCharacter('.')">.</button>
+            <button class="btn eql-button" onclick="calculate()">=</button>
+        </div>
     </div>
+    <script src="script.js"></script>
 </body>
 </html>
