@@ -3,35 +3,70 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Calculator</title>
+    <title>Sports Service</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <div class="calculator">
-        <div class="display" id="display"></div>
-        <div class="buttons">
-            <button class="btn operator" onclick="clearDisplay()">C</button>
-            <button class="btn operator" onclick="backspace()">DEL</button>
-            <button class="btn operator" onclick="appendCharacter('%')">%</button>
-            <button class="btn operator" onclick="appendCharacter('/')">/</button>
-            <button class="btn" onclick="appendCharacter('7')">7</button>
-            <button class="btn" onclick="appendCharacter('8')">8</button>
-            <button class="btn" onclick="appendCharacter('9')">9</button>
-            <button class="btn operator" onclick="appendCharacter('*')">*</button>
-            <button class="btn" onclick="appendCharacter('4')">4</button>
-            <button class="btn" onclick="appendCharacter('5')">5</button>
-            <button class="btn" onclick="appendCharacter('6')">6</button>
-            <button class="btn operator" onclick="appendCharacter('-')">-</button>
-            <button class="btn" onclick="appendCharacter('1')">1</button>
-            <button class="btn" onclick="appendCharacter('2')">2</button>
-            <button class="btn" onclick="appendCharacter('3')">3</button>
-            <button class="btn operator" onclick="appendCharacter('+')">+</button>
-            <button class="btn" onclick="appendCharacter('00')">00</button>
-            <button class="btn" onclick="appendCharacter('0')">0</button>
-            <button class="btn" onclick="appendCharacter('.')">.</button>
-            <button class="btn eql-button" onclick="calculate()">=</button>
+    <!-- Hero Section -->
+    <header class="hero-section">
+        <div class="hero-content">
+            <h1>Get in the Game</h1>
+            <p>Join our sports service today and take your game to the next level!</p>
+            <a href="#services" class="cta-button">Explore Our Services</a>
         </div>
-    </div>
-    <script src="script.js"></script>
+    </header>
+
+    <!-- About Us Section -->
+    <section id="about" class="about-section">
+        <h2>About Our Sports Service</h2>
+        <p>We offer top-notch sports training, events, and community programs to help athletes of all levels improve their skills and enjoy the game.</p>
+        <img src="images/img 7.webp" alt="About Us">
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="services-section">
+        <h2>Our Services</h2>
+        <div class="service-item">
+            <img src="images/img 1.jpg" alt="Training">
+            <h3>Professional Training</h3>
+            <p>Our expert coaches provide personalized training programs to help you reach your full potential.</p>
+        </div>
+        <div class="service-item">
+            <img src="images/img 2.avif" alt="Events">
+            <h3>Exclusive Events</h3>
+            <p>Participate in exclusive sports events and tournaments organized by our service.</p>
+        </div>
+        <div class="service-item">
+            <img src="images/img 3.jpg" alt="Community">
+            <h3>Community Support</h3>
+            <p>Join a community of like-minded athletes and enthusiasts who share your passion for sports.</p>
+        </div>
+    </section>
+
+
+    <!-- Testimonials Section -->
+    <section id="testimonials" class="testimonials-section">
+        <h2>What Our Athletes Say</h2>
+        <div class="testimonial">
+            <p>"The training programs here are unmatched! My game has improved tremendously."</p>
+            <h4>- Micheal, Basketball Player</h4>
+        </div>
+        <div class="testimonial">
+            <p>"Participating in the events organized by this service has been a game-changer for me."</p>
+            <h4>- Mohammed Shah, Cricket Player</h4>
+        </div>
+    </section>
+
+    <!-- Call to Action Section -->
+    <section id="cta" class="cta-section">
+        <h2>Ready to Elevate Your Game?</h2>
+        <p>Join us today and experience the best in sports training and events.</p>
+        <a href="#signup" class="cta-button">Sign Up Now</a>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <p>&copy; 2024 Sports Service. All rights reserved.</p>
+    </footer>
 </body>
 </html>
